@@ -1,0 +1,277 @@
+
+*{
+  font-size: 16px;
+}
+
+h2{
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+
+h3{
+  font-size: 2.5rem;
+  font-weight: 400;
+
+}
+
+p{
+  font-family: 'Mukta', 'sans-serif';
+  font-size: 16px;
+  color:hsl(0,  0%,  20%);
+  line-height: 1.5rem;;
+}
+
+
+h4{
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: 70%;
+}
+
+
+/* --------NAVIGATION BAR-------- */
+
+/* ----NAVIGATION LINKS---- */
+
+header{
+    position:fixed;
+    z-index: 5;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    font-family: 'Mukta';
+}
+
+#header-nav{
+    padding-right: 1.5rem;
+    height: 100%;
+    line-height:4rem;
+}
+
+#header-nav li{
+    display:inline-block;
+}
+
+#header-nav ul{
+   display:inline-block;
+   vertical-align:middle;
+   font-size: 1.25rem;
+}
+
+
+/* ----LOGO COLMAR ACADEMY---- */
+#logo{
+    padding-left: 24px;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+#logo span{
+    color:gray;
+}
+
+#logo img{
+  vertical-align: middle;
+  height: 3rem;
+  width:auto;
+}
+
+.logo-container{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.logo-text{
+    font-size: 2rem;
+  }
+
+
+#header-nav .first,
+#header-nav .second,
+#header-nav .third {
+
+    margin-right: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+}
+
+
+/* --------LEARN SOMETHING NEW EVERY DAY-------- */
+
+#banner-container{
+    position: relative;
+    
+    top:4rem;
+    padding:2rem 1.5rem;
+    background-color:lightgray;
+    display:flex;
+    
+}
+
+.banner-image{
+    flex-basis: 60%;
+    
+}
+
+.banner-text{
+    flex-basis: 40%;
+    text-align: left;
+    padding-left: 1.5rem;
+    vertical-align: center;
+    color:hsl(0,  0%,  20%);
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-content: left;
+    justify-content: center;
+    font-family: "Mukta";
+    padding-right: 9rem;
+}
+
+.banner-image img{
+  max-width: 100%;
+  height: auto;
+    
+}
+
+.banner-text h2{
+  
+  padding-bottom: 3rem;
+  
+}
+
+.banner-text h3{
+
+  padding-bottom: 3rem;
+   
+}
+
+
+.banner-text  a{
+box-sizing: border-box;
+color: hsl(0, 0% , 100%);
+font-size: 2rem;
+font-family: "mukta";
+background-color:hsl(0,  0%,  20%);
+text-align: center;
+padding: .5rem 0rem;
+line-height:1;
+}
+
+
+/* --------INFORMATION SECTION-------- */
+
+
+.informations{
+  position: relative;
+  top:4rem;
+  padding:2rem 1.5rem;
+  background-color:lightgray;
+  display:flex;
+  
+}
+
+
+.informations-image{
+  flex-basis: 60%;
+  
+  
+}
+
+
+.informations-image img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom:2rem;
+    
+}
+
+.informations-image .title{
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Mukta', 'sans-serif';
+  color:hsl(0,  0%,  20%);
+  margin-bottom: 1.5rem;
+  
+}
+
+.informations-image h4{
+  
+  vertical-align: bottom;
+  
+}
+
+.more-info{
+  flex-basis: 40%;
+  text-align: left;
+  padding-left: 1.5rem;
+  /* vertical-align: center; */
+  color:hsl(0,  0%,  20%);
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  font-family: "Mukta";
+  padding-right: 9rem;
+
+}
+
+.first-info, .second-info, .third-info{
+display:flex;
+padding: 1rem;
+
+
+}
+
+.first-info {
+  background-color: white;
+  align-items: center;
+}
+
+.second-info {
+  background-color: white;
+  align-items: center;
+}
+
+.third-info {
+  background-color: lightgray;
+  align-items: center;
+}
+
+.more-info img {
+  
+  max-width: 100%;
+  height: auto;
+
+}
+
+.orientation-text, .campus-text, .lecture-text{
+flex-basis: 65%;
+padding-left: 1.5rem;
+
+
+}
+
+.more-info .image-container{
+  flex-basis: 35%;
+}
+
+.more-info p {
+   line-height: 1.5rem;
+}
+
+.more-info h3{
+  line-height: 3rem;
+
+}
+
+.more-info a{
+  line-height: 1.5rem;
+  color:blue;
+}
