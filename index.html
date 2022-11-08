@@ -13,26 +13,44 @@
 
 <body>
   <header>
-    <div id="logo">
-      <div class="logo-container"><img src="./resources/images/ic-logo.svg" alt="image of ic logo"></div>
-      <div class="logo-text"><b>COLMAR</b><span>ACADEMY</span></div>
+    <div class="desktop">
+      <div id="logo">
+        <div class="logo-container"><img src="./resources/images/ic-logo.svg" alt="logo"></div>
+        <div class="logo-text"><b>COLMAR</b><span>ACADEMY</span></div>
+      </div>
+      <nav id="header-nav">
+        <ul>
+          <li class="first"><a href="#">On campus</a></li>
+          <li class="second"><a href="#">Online</a></li>
+          <li class="third"><a href="#">For companies</a></li>
+          <li class="fourth"><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="header-nav">
-      <ul>
-        <li class="first"><a href="#">On campus</a></li>
-        <li class="second"><a href="#">Online</a></li>
-        <li class="third"><a href="#">For companies</a></li>
-        <li class="fourth"><a href="#">Sign in</a></li>
-      </ul>
-    </nav>
+
+
+    <div class="mobile">
+      <div id="logo">
+        <div class="logo-container"><img src="./resources/images/ic-logo.svg" alt="logo"></div>
+      </div>
+      <nav id="header-nav">
+        <ul>
+          <li class="first"><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus"></a></li>
+          <li class="second"><a href="#"><img src="./resources/images/ic-online.svg" alt="online"></a></li>
+          <li class="third"><a href="#"><img src="./resources/images/ic-login.svg" alt="login"></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+
 
   <banner>
     <div id="banner-container">
       <div class="banner-image"><img src="./resources/images/banner.jpg" alt="students read"></div>
       <div class="banner-text">
         <h2>Learn something new everyday</h2>
-        <h3>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h3>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <a href="#">Start here</a>
       </div>
     </div>
@@ -53,6 +71,7 @@
     <div class="more-info">
       <div class="first-info">
         <div class="image-container"><img src="./resources/images/information-orientation.jpg" alt="#"></div>
+        <div class ="orientation-mobile"><img src="./resources/images/information-orientation-mobile.jpg" alt="#"></div>
         <div class="orientation-text">
           <h3>Orientation date</h3>
           <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -61,6 +80,7 @@
       </div>
       <div class="second-info">
         <div class="image-container"><img src="./resources/images/information-campus.jpg" alt="#"></div>
+        <div class ="campus-mobile"><img src="./resources/images/information-campus-mobile.jpg" alt="#"></div>
         <div class="campus-text">
           <h3>Our campus</h3>
           <p>Find which is close by you</p>
@@ -69,6 +89,7 @@
       </div>
       <div class="third-info">
         <div class="image-container"><img src="./resources/images/information-guest-lecture.jpg" alt="#"></div>
+        <div class="guest-mobile"><img src="./resources/images/information-guest-lecture-mobile.jpg" alt="#"></div>
         <div class="lecture-text">
           <h3>Our guest lecture</h3>
           <p>Join a Keynote with Oliver Sack about music in medical treatment</p>
@@ -142,7 +163,7 @@
 
 
   <div class="thesis-exhibit-section">
-    <p class="title">Thesis exhibit</p>
+    <p class="title">Thesis exhibits</p>
     <div class="thesis-exhibit">
       <div class="thesis-exhibit-video">
         <video src="./resources/videos/thesis.mp4" autoplay muted></video>
@@ -155,7 +176,7 @@
         <div class="te-first-info">
           <div class="image-container"><img src="./resources/images/information-orientation.jpg" alt="#"></div>
           <div class="fisma-text">
-            <h3>Fisma:Design and Prototype</h3>
+            <h3>Fisma: Design and Prototype</h3>
             <p>Design showcase of new prototype product</p>
 
           </div>

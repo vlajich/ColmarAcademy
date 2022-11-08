@@ -3,7 +3,6 @@
 
 
 
-
 *{
   font-size: 16px;
   box-sizing: border-box;
@@ -37,12 +36,32 @@ h4{
   font-stretch: 70%;
 }
 
+@media  only screen and (max-width:800px) {
+  h2{
+    font-size:2.5rem;
+  }
+
+  h3{
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h4{
+    font-size:0.75rem;
+    
+  }
+  p{
+    
+      font-size: 1rem;
+    }
+}  
+
 
 /* --------NAVIGATION BAR-------- */
 
 /* ----NAVIGATION LINKS---- */
 
-header{
+.desktop{
     position:fixed;
     z-index: 5;
     background-color: white;
@@ -108,6 +127,41 @@ header{
     text-align: left;
 }
 
+.mobile{
+  display:none;
+}
+
+
+
+@media only screen and (max-width:800px){
+
+
+.desktop{
+    display: none;
+}
+
+.mobile{
+  position:fixed;
+  z-index: 5;
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  font-family: 'Mukta';
+  min-width:100px;
+}
+.mobile img{
+  vertical-align:middle;
+}
+}
+
+
+
+
+
+
 
 /* --------LEARN SOMETHING NEW EVERY DAY-------- */
 .banner{
@@ -123,6 +177,7 @@ header{
     padding:6rem 0rem 2rem 1.5rem;
     background-color:silver;
     display:flex;
+
     max-width:100%;
 
 }
@@ -181,6 +236,73 @@ line-height:1;
 }
 
 
+.orientation-mobile, .campus-mobile, .guest-mobile{
+  display:none;
+}
+
+@media only screen and (max-width:800px){
+
+  #banner-container{
+
+    padding:4rem 0rem 0rem 0rem;
+    flex-wrap: wrap;
+  }
+
+.banner-image{
+  display:block;
+  min-width: 100%;
+  padding:0;
+  height:auto;
+
+}
+
+.banner-image img{
+  max-width:100%;
+  height:auto;
+
+
+}
+
+.banner-text{
+  flex-basis: 100%;
+  text-align: left;
+
+  
+  color:hsl(0,  0%,  20%);
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  font-family: "Mukta";
+  padding: 2rem 1rem;
+}
+
+.banner-text h2{
+
+  padding-bottom: 2rem;
+
+}
+
+.banner-text h3{
+
+  padding-bottom: 1.5rem;
+
+}
+
+.banner-text  a{
+  box-sizing: border-box;
+  color: hsl(0, 0% , 100%);
+  font-size: 1.25rem;
+  font-family: "mukta";
+  background-color:hsl(0,  0%,  50%);
+  text-align: center;
+  padding: .5rem 0rem;
+  line-height:1;
+  }
+
+
+
+
+}
 /* --------INFORMATION SECTION-------- */
 
 
@@ -291,7 +413,7 @@ width:100%;
 
 
 
-.more-info img {
+.more-info .image-container img {
 
   max-width: 100%;
   height: auto;
@@ -326,6 +448,82 @@ padding-left: 1.5rem;
   color:blue;
 }
 
+@media only screen and (max-width:800px){
+
+
+
+.informations{
+  padding: 0;
+}
+
+.informations-image{
+  display: none;
+}
+
+.more-info{
+  flex-basis: 100%;
+  text-align: left;
+
+  /* vertical-align: center; */
+  color:hsl(0,  0%,  20%);
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  font-family: "Mukta";
+  /* padding-right: 9rem; */
+  width: 100%;
+  border-left: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px lightgrey solid;
+
+}
+
+
+
+.orientation-text, .campus-text, .lecture-text{
+  flex-basis: 100%;
+  padding-left: 1.5rem;
+  
+  
+  }
+
+  .first-info, .second-info, .third-info{
+  flex-direction: column;
+  align-items: stretch;
+  border: none;
+  margin-top:1px;
+  background-color: whitesmoke;
+  
+
+}
+
+.more-info .image-container{
+  flex-basis:100%;
+  display:none;
+}
+
+.more-info img{
+  width: 100%;
+  height: auto;
+}
+
+.orientation-mobile, .campus-mobile, .guest-mobile{
+  display:block;
+}
+
+
+.orientation-text, .campus-text, .lecture-text{
+  flex-basis: 100%;
+  padding-left: 1rem;
+   
+  }
+
+
+
+}
 
 /* --------START LEARNGING SECTION-------- */
 
@@ -399,6 +597,62 @@ padding: 1rem;
 .courses h3{
   padding-bottom:0.25rem;
 }
+
+
+@media only screen and (max-width:800px){
+
+  .start-learning{
+    background-color:snow;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+.start-learning .image-container{
+  display: none;
+  }
+
+.courses p{
+  display: none;
+}
+
+.courses{
+  padding: 1rem 1.5rem 0rem 1.5rem;
+  display: block;
+
+}
+  
+
+#software-engineer,
+#computer-art,
+#design,
+#data,
+#business,
+#marketing {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0.5rem 0rem;
+  background-color: silver;
+  }
+
+ .courses h3{
+    padding: 0;
+  }
+
+  .start-learning-text{
+    padding: 0;
+  }
+  }
+
+  .start-learning .title{
+
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Mukta', 'sans-serif';
+    color:hsl(0,  0%,  20%);
+    text-align: center;
+    padding-bottom: 0rem;
+    line-height: 1;
+  }
 
 
 /* --------THESIS EXHIBIT-------- */
@@ -541,6 +795,41 @@ align-items: center;
 }
 
 
+@media only screen and (max-width:800px){
+
+  .te-more-info{
+   display:none;
+  }
+
+  .thesis-exhibit-section p, .thesis-exhibit-section .title {
+    display:none;
+  }
+
+  .thesis-exhibit-section {
+    padding:0;
+    border:none;
+    
+  }
+
+  .thesis-exhibit {
+    padding:0;
+
+  }
+  .thesis-exhibit-video {
+    padding:0;
+    flex-basis: 100%;
+    height: auto;
+  }
+
+  .thesis-exhibit-section video{
+    padding: 0;
+    margin: 0;
+   
+    height:auto;
+    border: 1px lightgrey solid;
+  }
+}
+
 /* --------FOOTER-------- */
 
 
@@ -580,5 +869,19 @@ footer{
     margin-right: 1rem;
     margin-left: 0rem;
 
+}
 
+@media only screen and (max-width:800px){
+
+  #footer-nav{
+    display:none;
+  }
+footer{
+  margin-top: 1.5rem;
+  display:block;
+}
+
+.copyright{
+padding: 1rem;
+}
 }
